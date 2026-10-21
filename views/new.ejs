@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create new post</title>
+</head>
+<body>
+    <form method="POST" action="/posts/new" enctype="multipart/form-data">
+       <input placeholder="Enter your userId" name="username">
+       <br><br>
+       <label for="uploadImg">Upload img :</label>
+       <input id="uploadImg" name="img" type="file" accept="image/*">
+       <br><br>
+       <textarea name="caption" placeholder="Enter caption"></textarea>
+       <br>
+       <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
